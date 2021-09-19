@@ -1,0 +1,23 @@
+﻿@model MySoccerPortal.Models.StudentViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Students", FormMethod.Post))
+{
+    <table  cellpadding="0" cellspacing="0">
+        Firstname:
+        @Html.EditorFor(model => model.FirstName)
+        <br />
+        Lastname:
+        @Html.EditorFor(model => model.LastName)
+        <br />
+        Age:
+        @Html.EditorFor(model => model.Age)
+        <br />
+        <button type="submit">Submit</button>
+    </table>
+}
+

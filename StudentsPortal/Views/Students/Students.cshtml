@@ -1,0 +1,26 @@
+﻿@model MySoccerPortal.Models.StudentViewModel
+@{
+    ViewBag.Title = "Students";
+}
+
+<h2>Students</h2>
+<TABLE>
+    <TR>
+        <TD>Chris</TD>
+        <TD>Woodman</TD>
+        <td>18</td>
+    </TR>
+    <TR>
+        <TD>Arash</TD>
+        <TD>Patel</TD>
+        <td>19</td>
+    </TR>
+    <TR>
+        <TD>Smit</TD>
+        <TD>John</TD>
+        <td>18</td>
+    </TR>
+</TABLE>
+
+@Html.ActionLink("Add new student", "Create", "Students")
+
