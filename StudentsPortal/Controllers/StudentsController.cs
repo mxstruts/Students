@@ -24,6 +24,7 @@ namespace MySoccerPortal.Controllers
             var model = new StudentViewModel();
             return View(model);
         }
+
         [HttpPost]
         public ActionResult Create(StudentViewModel model)
         {
@@ -36,8 +37,14 @@ namespace MySoccerPortal.Controllers
 
         public ActionResult Edit()
         {
-            return View();
+            var model = new StudentViewModel();
+            return View(model);
         }
 
+        [HttpPost]
+        public ActionResult Edit(StudentViewModel model)
+        {
+            return View(model);
+        }
     }
 }
